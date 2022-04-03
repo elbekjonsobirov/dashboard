@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { MenuSharp } from '@mui/icons-material'
+import Search from './components/search';
+import Navbar from './components/navbar';
+import Dashboard from './components/Dashboard/Dashboard';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+
+  state = {
+    MenuActive: true
+  }
+
+  MenuLeftRigth = () => {
+    const { MenuActive } = this.state
+    this.setState({
+      MenuActive: !MenuActive
+    })
+  }
+
+  render() {
+    const { MenuActive } = this.state
+    return (
+      <div className='container'>
+        <button onClick={this.MenuLeftRigth} className={MenuActive === false ? 'navbar-left-right' : 'navbar-left-right navbar-left-right-active'}>
+          <MenuSharp className='navbar-btn-icon' />
+        </button>
+        <Search
+          MenuActive={this.state.MenuActive}
+        />
+        <Navbar
+          MenuLeftRigth={this.MenuLeftRigth}
+          MenuActive={this.state.MenuActive}
+        />
+        <Dashboard
+          MenuActive={this.state.MenuActive}
+        />
+      </div>
+    );
+  }
 }
 
 export default App;
