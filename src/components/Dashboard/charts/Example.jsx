@@ -4,7 +4,7 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsive
 const data = [
   {
     name: 'Page A',
-    uv: 4000,
+    uv: 1000,
     pv: 2400,
     amt: 2400,
   },
