@@ -5,7 +5,7 @@ const data = [
   {
     name: 'Page A',
     uv: 1000,
-    pv: 2000,
+    pv: 2200,
     amt: 2400,
   },
   {
