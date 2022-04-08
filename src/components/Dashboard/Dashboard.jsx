@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './style/Dashboard.scss'
 import {pink } from '@mui/material/colors';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
@@ -7,7 +8,7 @@ import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import PeopleAltRoundedIcon from '@mui/icons-material/PeopleAltRounded';
 import InsertChartOutlinedIcon from '@mui/icons-material/InsertChartOutlined';
 import MonetizationOnSharpIcon from '@mui/icons-material/MonetizationOnSharp';
-import Example from './charts/Example';
+import SimpleBarChart from './charts/SimpleBarChart';
 
 
 class Dashboard extends Component {
@@ -87,7 +88,7 @@ class Dashboard extends Component {
                             </select>
                         </div>
                         <div className="PureComponent-section">
-                            <Example/>
+                            <SimpleBarChart className='salom'/>
                         </div>
                     </div>
                     <div className="circle-charts-card">ascsa</div>
