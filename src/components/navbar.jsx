@@ -49,7 +49,7 @@ class Navbar extends Component {
                         <h1 className="navbar-li-name">Settings</h1>
                     </Button>
                     </Link>
-                    <Link to='login'>
+                    <Link to='/login'>
                     <Button className="navbar-li-btn">
                         <LockIcon className='navbar-btn-icon' />
                         <h1 className="navbar-li-name">Login</h1>
