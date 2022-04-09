@@ -3,26 +3,25 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;
 }
 
-.register-page {
+.login-page {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    .register-card {
+    .login-card {
         width: 450px;
         height: auto;
-        background-color: rgba(255, 255, 255, 1);
         margin: 50px 0;
         padding: 30px 0;
         box-shadow: 0px 4px 6px -2px rgba(100, 116, 139, 0.05), 0px 10px 15px -3px rgba(100, 116, 139, 0.12);
         border-radius: 8px;
-        .register-back {
+        .login-back {
             display: flex;
             align-items: center;
             margin-left: 45px;
@@ -33,12 +32,12 @@
             line-height: 14px;
             padding: 10px 0;
             color: rgba(80, 72, 229, 1);
-            .register-icon-back {
+            .login-icon-back {
                 font-size: 20px;
                 color: rgba(80, 72, 229, 1);
             }
         }
-        .register-title {
+        .login-title {
             margin-left: 45px;
             font-family: 'Inter', sans-serif;
             font-weight: 700;
@@ -47,7 +46,7 @@
             margin-top: 10px;
             color: rgba(17, 24, 39, 1);
         }
-        .register-comment {
+        .login-comment {
             font-family: 'Inter', sans-serif;
             font-weight: 400;
             font-size: 14px;
@@ -56,49 +55,80 @@
             margin-left: 48px;
             margin-bottom: 10px;
         }
-        .register-miu {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            .TextField {
-                width: 350px;
-            }
-        }
-        .register-checkbox-card {
-            width: 100%;
+        .login-network {
+            width: 350px;
+            margin-left: 45px;
+            padding: 10px 0;
             height: auto;
             display: flex;
             align-items: center;
-            font-family: 'Inter', sans-serif;
-            font-weight: 400;
-            font-size: 12px;
-            margin: 10px 0 0 45px;
-            .register-aLink {
+            justify-content: space-between;
+            .login-btn-facebook {
+                background-color: #4267B2;
+                color: white;
+                width: 150px;
                 font-family: 'Inter', sans-serif;
-                font-weight: 400;
-                font-size: 12px;
-                margin-left: 3px;
-                color: #5048E5;
-                border: none;
-                text-transform: none;
-                padding: 0;
-                transform: translate(0, -32.5%);
+                font-weight: 600;
+                font-size: 7px;
+                line-height: 26px;
+                gap: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .facebook-icon {
+                    font-size: 18px;
+                }
+            }
+            .login-btn-gmail {
+                background-color: #EA4335;
+                color: white;
+                width: 150px;
+                font-family: 'Inter', sans-serif;
+                font-weight: 600;
+                font-size: 7px;
+                line-height: 26px;
+                gap: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .gmail-icon {
+                    font-size: 18px;
+                }
             }
         }
-        .register-stack {
+        .login-text {
+            width: 100%;
+            height: auto;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21.98px;
+            text-align: center;
+            padding: 5px 0;
+            color: rgba(107, 114, 128, 1);
+        }
+        .login-mui {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            margin-left: 40px;
+            .login-input {
+                width: 350px;
+            }
+        }
+        .login-stack {
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            .register-button {
+            padding: 10px 0;
+            .login-button {
                 width: 350px;
                 background-color: rgba(80, 72, 229, 1);
             }
         }
-        .register-login {
+        .login-login {
             width: 100%;
             height: 30px;
             margin-left: 55px;
@@ -111,13 +141,14 @@
             line-height: 21.98px;
             gap: 7px;
             color: rgba(107, 114, 128, 1);
-            .register-login-link{
+            .login-login-link{
                 font-size: 12px;
                 font-family: 'Inter', sans-serif;
                 font-weight: 600;
                 line-height: 21.98px;
                 gap: 7px;
                 color: rgba(80, 72, 229, 1);
+
             }
         }
     }

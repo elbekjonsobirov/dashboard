@@ -66,9 +66,9 @@ class Register extends Component {
                             >Sign Up</Button>
                         </Stack>
                         <h1 className="register-login">
-                            Don’t have an account?
+                            Have an account?
                             <Link to="/login" className='register-login-link'>
-                                Sign up
+                                Sign in
                             </Link>
                         </h1>
                     </div>
