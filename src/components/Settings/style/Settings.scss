@@ -1,0 +1,97 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.settings-page {
+    width: 100%;
+    height: auto;
+    background-color: #F9FAFC;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .settings-ntion {
+        width: 95%;
+        margin: 50px 0;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 1px 1px rgba(100, 116, 139, 0.06), 0px 1px 2px rgba(100, 116, 139, 0.1);
+        border-radius: 8px;
+        .ntion-title-card {
+            width: 100%;
+            height: auto;
+            border-bottom: 3px solid #F9FAFC;
+            padding: 20px;
+            .ntion-title {
+                font-family: 'Inter', sans-serif;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 24.75px;
+                color: rgba(17, 24, 39, 1);
+            }
+            .ntion-comment {
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21.98px;
+                color: rgba(107, 114, 128, 1);
+            }
+        }
+        .ntion-edit-card {
+            width: 100%;
+            height: auto;
+            display: flex;
+            gap: 100px;
+            padding: 20px;
+            border-bottom: 3px solid #F9FAFC;
+            .notifications {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .notifications-title {
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 24.75px;
+                    color: rgba(17, 24, 39, 1);
+                }
+            }
+        }
+        .settings-save {
+            width: 100%;
+            height: auto;
+            padding: 20px;
+            display: flex;
+            justify-content: end;
+            .settings-save-btn {
+                width: 73px;
+                height: 40px;
+                border-radius: 8px;
+                background-color: rgba(80, 72, 229, 1);
+                font-family: 'Inter', sans-serif;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+        .pass-edit-card {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            border-bottom: 3px solid #F9FAFC;
+            .TextField {
+                width: 100%;
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}

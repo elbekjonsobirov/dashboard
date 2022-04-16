@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.error-page {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .error-title {
+        width: 60%;
+        height: auto;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+        color: rgba(17, 24, 39, 1);
+    }
+    .error-comment {
+        width: 60%;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 21.98px;
+        text-align: center;
+        color: rgba(17, 24, 39, 1);
+        margin: 30px;
+    }
+    .error-img-card {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .error-img {
+            width: 60%;
+        }
+    }
+    .error-btn-card {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+        .error-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 235px;
+            height: 48px;
+            background-color: #5048E5;
+            color: white;
+            border-radius: 8px;
+            gap: 5px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 26px;
+        }
+    }
+}

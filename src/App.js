@@ -11,13 +11,14 @@ import Login from './components/Login/Login'
 import Register from './components/Register/Register'
 import Error from './components/Error/Error'
 
+
 import {Route, Routes} from 'react-router-dom'
 
 
 class App extends Component {
 
   state = {
-    MenuActive: true
+    MenuActive: true,
   }
 
   MenuLeftRigth = () => {
@@ -29,14 +30,15 @@ class App extends Component {
 
 
   render() {
-    const { MenuActive } = this.state
+    const { MenuActive, UserPhoto } = this.state
     return (
       <div className='container'>
         <button onClick={this.MenuLeftRigth} className={MenuActive === false ? 'navbar-left-right' : 'navbar-left-right navbar-left-right-active'}>
           <MenuSharp className='navbar-btn-icon' />
         </button>
         <Search
-          MenuActive={this.state.MenuActive}
+          MenuActive={MenuActive}
+          UserPhoto={UserPhoto}
         />
         <Navbar
           MenuLeftRigth={this.MenuLeftRigth}
